@@ -23,7 +23,13 @@ public class MyServiceProperties {
 
     public static class MyProperties {
         public static final String DEFAULT_NAME;
+        /**
+         * zuthor
+         */
         private String author;
+        /**
+         * age
+         */
         private String age;
 
         static {

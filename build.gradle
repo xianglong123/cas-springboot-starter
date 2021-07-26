@@ -21,7 +21,7 @@ plugins {
 }
 
 group = 'com.cas'
-version = '0.0.4-SNAPSHOT'
+version = '0.0.5-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
@@ -33,6 +33,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-autoconfigure:2.4.1'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor:2.5.3'
 }
 // 指定上传的路径
 def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
